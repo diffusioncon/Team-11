@@ -1,0 +1,106 @@
+version: "3.0"
+services:
+  client:
+    build: ./client
+    restart: "always"
+    ports:
+      - "3000:3000"
+  client2:
+    build: ./client
+    ports:
+      - "3001:3001"
+  contract_api:
+    build: ./backend/python/middleLayer/contractApi
+    volumes:
+      - './backend/python/middleLayer/contractApi:/app'
+    ports:
+      - "5003:5000"
+    environment:
+        #    - OEF_ADDRESS=oef-node
+        #  - OEF_PORT=7500
+      - OEF_ADDRESS=oef.economicagents.com
+      - OEF_PORT=3333
+      - LEDGER_ADDRESS=ledger_node
+      - LEDGER_PORT=8100
+
+  garage_api:
+    build: ./backend/python/middleLayer/garageApi
+    volumes:
+      - './backend/python/middleLayer/garageApi:/app'
+    restart: "always"
+    ports:
+      - "5002:5000"
+    environment:
+      - OEF_ADDRESS=oef.economicagents.com
+      - OEF_PORT=3333
+        # - OEF_ADDRESS=oef-node
+        # - OEF_PORT=7500
+      - LEDGER_ADDRESS=ledger_node
+      - LEDGER_PORT=8100
+
+  driver_apis:
+    hostname: python_apis
+    build: ./backend/python/middleLayer/driverApi
+    restart: "always"
+    volumes:
+      - './backend/python/middleLayer/driverApi:/app'
+    ports:
+      - "5001:5001"
+    environment:
+      - OEF_ADDRESS=oef.economicagents.com
+      - OEF_PORT=3333
+      - LEDGER_ADDRESS=ledger_node
+      - LEDGER_PORT=8100
+
+        #  python_apis:
+        #    hostname: python_apis
+        #    build: ./backend/python/
+        #    volumes:
+        #      - './backend/python:/app'
+        #    ports:
+        #      - "5001:5001"
+        #      - "5002:5002"
+        #      - "5003:5003"
+        #      - "5004:5004"
+        #    environment:
+        #      - OEF_ADDRESS=oef.economicagents.com
+        #      - OEF_PORT=3333
+        #      - LEDGER_ADDRESS=ledger_node
+        #      - LEDGER_PORT=8100
+        #
+
+
+  ledger_node:
+    hostname: ledger
+    restart: "always"
+    command: "./build/apps/constellation/constellation -standalone -block-interval 1000 -experimental synergetic,naive-synergetic-mining -port 8100"
+    build: ./ledger/
+    ports:
+      - "8100:8100"
+
+
+  oef-node:
+    image: "fetchai/oef-search:0.7"
+    restart: "always"
+    ports:
+      - "10000:10000"
+      - "20000:20000"
+      - "40000:40000"
+      - "7500:7500"
+    volumes:
+      - "./oef_node/:/config"
+      - "./oef_node/oef-logs:/logs/"
+    command:
+      - "/config/node_config.json"
+    healthcheck:
+      interval: 10s
+      retries: 5
+      test:
+      - "CMD-SHELL"
+      - "python3"
+      - "oef_healthcheck.py"
+      - "127.0.0.1"
+      - "10000"
+      timeout: 5s
+    restart: on-failure
+

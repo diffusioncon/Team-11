@@ -1,0 +1,195 @@
+{
+	"drivers": [
+		{
+			"id": "string",
+  	"name": "P & R Froettmaning",
+  	"currentLocationLat": 48.21452,
+  	"currentLocationLong": 11.624494,
+  	"maxAllowed": 19,
+  	"currentCapacity": 0,
+  	"pricePreference": 2
+		},
+		{
+  	"id": "string",
+  	"name": "MOC Veranstaltungscenter München",
+  	"currentLocationLat": 48.196464,
+  	"currentLocationLong": 11.609788,
+  	"maxAllowed": 1,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+		{
+  	"id": "string",
+  	"name": "MOC Veranstaltungscenter München Tiefgarage",
+  	"currentLocationLat": 48.196213,
+  	"currentLocationLong": 11.610747,
+  	"maxAllowed": 23,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+
+	{
+  	"id": "string",
+  	"name": "Ibis- und Suite NOVOTEL",
+  	"currentLocationLat": 48.179563,
+  	"currentLocationLong": 11.593006,
+  	"maxAllowed": 2,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Hotel Marriott",
+  	"currentLocationLat": 48.174412,
+  	"currentLocationLong": 11.591518,
+  	"maxAllowed": 2,
+  	"currentCapacity": 0,
+  	"pricePreference": 5
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Messe Muenchen",
+  	"currentLocationLat": 48.139842,
+  	"currentLocationLong": 11.691686,
+  	"maxAllowed": 2,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "P & R Messestadt Ost",
+  	"currentLocationLat": 48.133469,
+  	"currentLocationLong": 11.705896,
+  	"maxAllowed": 16,
+  	"currentCapacity": 0,
+  	"pricePreference": 2
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Riem Arcaden West Tiefgarage",
+  	"currentLocationLat": 48.133064,
+  	"currentLocationLong": 11.689739,
+  	"maxAllowed": 1,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Riem Arcaden Tiefgarage",
+  	"currentLocationLat": 48.13316,
+  	"currentLocationLong": 11.693717,
+  	"maxAllowed": 1,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Riem Arcaden SOP",
+  	"currentLocationLat": 48.132163,
+  	"currentLocationLong": 11.693975,
+  	"maxAllowed": 4,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Hofbräukeller",
+  	"currentLocationLat": 48.133673,
+  	"currentLocationLong": 11.594231,
+  	"maxAllowed": 2,
+  	"currentCapacity": 0,
+  	"pricePreference": 5
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Laimer Platz",
+  	"currentLocationLat": 48.1355,
+  	"currentLocationLong": 11.5014,
+  	"maxAllowed": 3,
+  	"currentCapacity": 0,
+  	"pricePreference": 2
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Neue Hopfenpost",
+  	"currentLocationLat": 48.1439615,
+  	"currentLocationLong": 11.5554019,
+  	"maxAllowed": 4,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Hauptbahnhof Parkbuchten Bayerstr. P1",
+  	"currentLocationLat": 48.1394432,
+  	"currentLocationLong": 11.5573314,
+  	"maxAllowed": 1,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Hauptbahnhof Süd P4",
+  	"currentLocationLat": 48.138754,
+  	"currentLocationLong": 11.5579732,
+  	"maxAllowed": 4,
+  	"currentCapacity": 0,
+  	"pricePreference": 3
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Stachus",
+  	"currentLocationLat": 48.1370213,
+  	"currentLocationLong": 11.5646007,
+  	"maxAllowed": 11,
+  	"currentCapacity": 0,
+  	"pricePreference": 5
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "Tiefgarage Oberanger",
+  	"currentLocationLat": 48.1345956,
+  	"currentLocationLong": 11.5691598,
+  	"maxAllowed": 5,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	},
+
+
+	{
+  	"id": "string",
+  	"name": "string",
+  	"currentLocationLat": 48.1364522,
+  	"currentLocationLong": 11.5727705,
+  	"maxAllowed": 4,
+  	"currentCapacity": 0,
+  	"pricePreference": 4
+	}
+	]
+}

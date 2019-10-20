@@ -1,0 +1,22 @@
+@import "../../index.scss";
+
+.card {
+  font-size:10px;
+  background: $dark_grey;
+  color: white;
+}
+
+.card-deck {
+  border:1px solid rgba(255,255,255,0.2);
+}
+
+p .card-text {
+  margin:0 !important;
+  padding: 0 !important;
+}
+
+.card-text {
+  margin:0 !important;
+  padding: 0 !important;
+  padding-right: 1px !important;
+}

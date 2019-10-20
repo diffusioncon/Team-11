@@ -1,0 +1,13 @@
+FROM node:11.10.1
+
+ARG CLIENT_TARGET_DIR=/srv/
+
+COPY *.json ${CLIENT_TARGET_DIR}/
+
+WORKDIR ${CLIENT_TARGET_DIR}
+
+RUN npm install
+
+ADD  ./ ${CLIENT_TARGET_DIR}/
+
+CMD npm run start
