@@ -3,7 +3,7 @@ networkx==2.3
 Flask_Cors==3.0.8
 requests==2.18.4
 Werkzeug==0.15.4
-setuptools==39.0.1
+setuptools==65.5.1
 typing==3.7.4
 Flask==1.1.1
 base58==1.0.3
