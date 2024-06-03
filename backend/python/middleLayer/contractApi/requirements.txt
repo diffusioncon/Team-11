@@ -1,7 +1,7 @@
 numpy==1.16.4
 oef==0.3.2
 typing==3.7.4
-Flask==0.12.2
+Flask==1.0
 requests==2.18.4
 flask_restplus==0.12.1
 Werkzeug==0.14.1
